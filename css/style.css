@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.67em;
+}
+.heading {
+  color:red;
+}
+table,tr,th,td,caption {
+  border: 3px solid brown;
+  border-collapse: collapse;
+  padding: 0.5em;
+}

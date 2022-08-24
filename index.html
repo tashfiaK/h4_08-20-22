@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>HTML Practice Task</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1>HTML Element Reference</h1>
+        <p class="h1-para">In this webpage,I'm going to practice the first 60 html tag along with some css code.</p>
+        <!--Add a disclaimer for this webpage-->
+        <hr>
+        <h2>First 10 Tags</h2>
+        <p class="h2-para">3 of the tags will be in list format.Usage of:-</p>
+        <ul>
+            <li>
+                <strong>anchor tag</strong>: <br>
+                <a href="images/htmlprac.png">HTML Prac</a>
+            </li>
+            <li><em>abbreviation tag</em>:
+                <abbr title="Hyper Text Markup Language">HTML</abbr>
+            </li>
+            <li>Address tag:
+                <address>
+                    220 Pawtcuket st, <br>
+                    Lowell,MA 01854 <br>
+                    United States
+                </address>
+            </li>
+        </ul>
+        <div>
+            <aside>
+                <details>
+                    <summary>Usage of <b>aside tag</b></summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eius. Dolorum quia a commodi placeat ratione, voluptates atque labore fugiat soluta illo odit, nesciunt nam hic fugit cum est culpa.</p>
+                </details>
+            </aside>
+        </div>
+        <article>
+            <header>
+            <h3>Usage of othertags</h3>
+            <p>In this article I'll be working on section tag,audio tag and its attributes.</p>
+            </header>
+            <section>
+                <h4>Audio tag and its attributes</h4>
+                <audio controls>
+                    <source src="music1.mp3" type="audio/mp3">
+                </audio>
+                <br>
+                <audio controls loop>
+                    <!--Work on attributes such as autoplay,muted,preload-->
+                    <source src="audio/music2.mp3" type="audio/mp3">
+                </audio>
+            </section>
+        </article>
+        <div>
+        <p>Here I'll show you how 'bdo' tag works.</p>
+        <p><bdo dir="rtl">This line will go right-to-left.</bdo></p>
+        <p><bdo dir="ltr">This line will go left-to-right</bdo></p>
+        </div>
+        <div>
+            <p>It's time to work on blockquote.Here is a quote from </p>
+            <blockquote cite="https://www.scientificamerican.com/article/leonardo-dicaprio-uses-oscar-speech-to-urge-action-on-climate-change/#:~:text=%E2%80%9CClimate%20change%20is%20real%3B%20it,for%20granted%2C%E2%80%9D%20he%20said.">
+                Climate change is real; it is happening right now. It is the most urgent threat facing our entire species, and we need to work collectively together and stop procrastinating,to applause from celebrities and others inside Hollywood's Dolby Theatre.Let us not take this planet for granted.
+                <!--'cite' stands for sources of the quote-->
+            </blockquote>
+        </div>
+        <p>The button element</p>
+        <button type="button" onclick="alert('Hi,you!')">Click me</button>
+        <!--Practice the other attributes of this tag-->
+        <dl>
+            <dt>The cite element</dt>
+            <dd><img src="images/the-scream.jpg" alt="The Scream">
+            <p><cite>The Scream</cite>by Edward Munch.Painted in 1893</p>
+            </dd>
+        </dl>
+        <div>
+            <p class="code">The code element</p>
+            <p>The HTML <code>button</code> tag defines a clickabale button.</p>
+        </div>
+        <br>
+        <h3>Creating a table</h3>
+     <main>
+        <table>
+            <caption>University list for fall 22</caption>
+            <colgroup>
+            <col span="1" style="background-color: gray ;">
+        </colgroup>
+            <tr>
+                <th>University Name</th>
+                <th>State</th>
+                <th>Tuition Fees</th>
+            </tr>
+            <tr>
+                <td>RIT</td>
+                <td>NewYork</td>
+                <td>$30,000</td>
+            </tr>
+            <tr>
+                <td>MCPHS</td>
+                <td>Massachusetts</td>
+                <td>$50,000</td>
+            </tr>
+            <tr>
+                <td>Miami University</td>
+                <td>Ohio</td>
+                <td>$27,000</td>
+            </tr>
+            <tr>
+                <td>UML</td>
+                <td>Massachusetts</td>
+                <td>$22,000</td>
+            </tr>
+        </table>
+    </main>
+        <div>
+            <p style="font-weight:bold">Usage of <em>del</em> and "ins" element:</p>
+            <p>My fac color is <del>Red</del><ins>Black</ins>.</p>
+        </div>
+        <div>
+            <p>The <strong>dfn</strong> element:</p>
+            <!--'dfn' is used to specify a term that is going ti be defined within the content-->
+            <p><dfn>HTML</dfn>stands for Hyper...</p>
+            <br>
+            <p>The 'dialog' element:</p>
+            <p>This a line.</p>
+            <dialog open>This is an open window!</dialog>
+            <p>This is the ending line.</p>
+            <br>
+            <p>'Embed' element:</p>
+            <embed src="images/mountain.jpg" type="image/jpg"> 
+                <!--The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application-->
+        </div>
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Information desk</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"> <br> <br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"> <br> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"> <br> <br>
+                <label for="dbirth">Date of Birth:</label>
+                <input type="date" id="dbirth" name="dbirth"> <br><br>
+                <input type="Submit" value="Submit">
+            </fieldset>
+        </form>
+        <figure>
+            <img src="images/river.jpg" alt="river">
+            <figcaption>Fig-1:River in between mountains</figcaption>
+        </figure>
+        <p>The "i" element:
+            <br>
+            <i>Lorem Ipsum</i> is the most popular filler text in history.
+        </p>
+        <p>The "kbd(keyboard)" element: <br>
+            Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text in windows.
+        </p>
+        <p>The mark element: <br>
+            Do not forget to buy <mark>Milk</mark>
+        </p>
+        <p>the object elemnet:
+            <br>
+            <object data="images/mountain.jpg" type="media_type">Prac</object>
+        </p>
+        <a href="about.html">about me</a>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
